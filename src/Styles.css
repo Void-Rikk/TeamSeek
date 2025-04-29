@@ -1,0 +1,334 @@
+:root {
+    --main-font-color: #006497;
+}
+
+body {
+    background-color: #6cccf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, serif;
+}
+
+/*Register and Login styles start*/
+
+.LogContainer {
+    position: relative;
+
+    height: 40vh; /*properties block*/
+    width: 30vw;
+
+    margin-top: 20vh;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column; /*inside positioning block*/
+    align-items: center;
+
+    background-color: #a3dfff;
+
+    border-radius: 40px;
+    box-shadow: 1px 1px 50px 1px #56a2c6;
+}
+
+.RegContainer {
+    position: relative;
+
+    height: 45vh; /*properties block*/
+    width: 30vw;
+
+    margin-top: 20vh;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column; /*inside positioning block*/
+    align-items: center;
+
+    background-color: #a3dfff;
+
+    border-radius: 40px;
+    box-shadow: 1px 1px 50px 1px #56a2c6;
+}
+
+.textHeader {
+    color: var(--main-font-color);
+    font-size: 40px;
+}
+
+.labels {
+    color: var(--main-font-color);
+    font-size: 18px;
+}
+
+.inputs {
+    border-radius: 20px;
+    border: 0;
+
+    height: 3vh;
+    width: 15vw;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.inputs:focus {
+    outline-width: 0;
+    transform: scale(110%);
+}
+
+.executeButton {
+    text-decoration: none;
+    text-align: center;
+
+    margin-bottom: 50px;
+    padding-top: 10px;
+
+    border: none;
+    border-radius: 40px;
+
+    color: var(--main-font-color);
+    background-color: #96d2fc;
+
+    width: 4vw;
+    height: 3vh;
+    transition: all 0.1s ease-in-out;
+}
+
+.executeButton:hover {
+    cursor: pointer;
+
+    background-color: #6fcafb;
+}
+
+.alternativeButton {
+    position: absolute;
+    bottom: 10px;
+
+    border: 0;
+    background-color: #a3dfff;
+
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+.alternativeButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Register and Login styles end*/
+
+.mainContainer {
+
+    position: relative;
+
+    border-radius: 50px;
+    color: var(--main-font-color);
+
+    padding: 20px 50px 5px 50px;
+
+    background-color: #99dfff;
+
+    width: 80vw;
+    min-height: 100vh;
+}
+
+/*navBar styles start*/
+
+.homeNav {
+    box-shadow: inset 1px 1px 7px 3px #29b5ff;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #85d7ff;
+
+    border-radius: 30px;
+
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+}
+
+.homeNav h1 {
+    font-size: 30px;
+
+    padding-top: 10px;
+    margin: 0;
+}
+
+.homeNav a {
+    font-size: 24px;
+
+    color: var(--main-font-color);
+
+    text-decoration: none;
+}
+
+.homeNav a:hover {
+    text-decoration: underline;
+}
+
+.homeNav .navRightCorner {
+    border-radius: 30px;
+
+    padding: 10px;
+
+    min-width: 10vw;
+    height: 3vh;
+
+    display: flex;
+    justify-content: space-around;
+
+    transition: all 0.1s ease-in;
+}
+
+.navRightCorner:hover    {
+    box-shadow: 1px 1px 5px 1px #29b5ff;
+    background-color: #9edcff;
+}
+
+/*navBar styles end*/
+
+/* SideBar styles start*/
+
+.sideBar {
+    border-radius: 30px;
+
+    background-color: #99dfff;
+
+    float: left;
+
+    display: inline-block;
+    /*position: absolute;*/
+    /*left: 50px;*/
+    margin-top: 30px;
+
+    padding: 10px;
+}
+
+.links {
+    box-shadow: inset 1px 1px 7px 3px #29b5ff;
+
+    display: inline-block;
+
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background-color: #85d7ff;
+}
+
+.sideBar a {
+    display: block;
+
+    margin: 10px;
+
+    font-size: 20px;
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+.sideBar a:hover {
+    text-decoration: underline;
+}
+
+.filterContainer {
+    box-shadow: inset 1px 1px 7px 3px #29b5ff;
+
+    min-width: 9vw;
+
+    border-radius: 30px;
+
+    padding: 10px;
+
+    background-color: #85d7ff;
+}
+
+.filterContainer p {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+.filterContainer ul {
+    padding-left: 10px;
+
+    list-style-type: none;
+}
+
+.filterContainer input {
+    margin-left: 0;
+}
+
+/* SideBar styles end */
+
+/* Users styles start */
+
+.usersContainer {
+    margin-left: 23vw;
+}
+
+.user {
+    border-radius: 15px;
+
+    padding: 10px;
+    margin-top: 2vh;
+
+    max-width: 30vw;
+
+    background-color: #6cccf9;
+
+    transition: all 0.1s ease-in;
+}
+
+.user:hover {
+    background-color: #45c3ff;
+}
+
+.user a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+.user p {
+
+    margin-left: 10px;
+    margin-top: 5px;
+
+    font-size: 26px;
+}
+
+.user .langsTable {
+    margin-top: 50px;
+
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.user .langsTable td {
+    background-color: #96d2fc;
+
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+.user .rolesTable {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.user .rolesTable td {
+    background-color: #96d2fc;
+
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+/* Users styles end */
