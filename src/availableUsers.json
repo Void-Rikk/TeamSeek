@@ -2,7 +2,7 @@
   "users": [
     {
       "name": "Danil",
-      "languages": ["Python", "C"],
+      "languages": ["Python", "C++"],
       "roles": ["Backend", "Game Developer"],
       "id": 1
     },
