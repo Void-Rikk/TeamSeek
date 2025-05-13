@@ -3,6 +3,7 @@ import LoginForm from "./LoginRegister/LoginForm.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './Styles.css';
 import HomePage from "./MainPages/HomePage.jsx";
+import UserPage from "./MainPages/UserPage.jsx";
 
 function App() {
 
@@ -10,8 +11,9 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="register" element={<RegisterForm />}/>
-                <Route path="login" element={<LoginForm />}/>
+                <Route path="/register" element={<RegisterForm />}/>
+                <Route path="/login" element={<LoginForm />}/>
+                <Route path="/users/:id" element={<UserPage />}/>
             </Routes>
         </BrowserRouter>
     );

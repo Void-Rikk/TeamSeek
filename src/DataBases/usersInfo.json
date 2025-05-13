@@ -1,0 +1,31 @@
+{
+  "usersInfo": [
+    {
+      "name": "Denis",
+      "url": "https://github.com/Void-Rikk",
+      "about": "Lorem ipsum",
+      "stack": ["Python", "C++", "JavaScript"],
+      "target": "Lorem ipsum",
+      "background": "Lorem ipsum",
+      "id": 1
+    },
+    {
+      "name": "Danil",
+      "url": "https://vk.com/trashj",
+      "about": "Lorem ipsum",
+      "stack": ["Python", "C++"],
+      "target": "Lorem ipsum",
+      "background": "Lorem ipsum",
+      "id": 2
+    },
+    {
+      "name": "Ivan",
+      "url": "https://github.com/Void-Rikk",
+      "about": "Lorem ipsum",
+      "stack": ["Python"],
+      "target": "Lorem ipsum",
+      "background": "Lorem ipsum",
+      "id": 3
+    }
+  ]
+}

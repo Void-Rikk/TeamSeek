@@ -1,0 +1,28 @@
+{
+  "loggedUsers": [
+    {
+      "name": "Denis",
+      "email": "buddy.den@mail.ru",
+      "password": "80163512",
+      "id": "1"
+    },
+    {
+      "name": "Danil",
+      "email": "danil2039@mail.ru",
+      "password": "00610655413",
+      "id": "2"
+    },
+    {
+      "name": "Ivan",
+      "email": "vanyo@mail.ru",
+      "password": "qwerty123",
+      "id": "3"
+    },
+    {
+      "id": "6575",
+      "name": "Dick",
+      "email": "dick@mail.ru",
+      "password": "bigdick"
+    }
+  ]
+}

@@ -2,6 +2,13 @@
     --main-font-color: #006497;
 }
 
+.loading {
+    font-size: 40px;
+
+    margin-top: 10vh;
+    margin-left: 35vw;
+}
+
 body {
     background-color: #6cccf9;
     display: flex;
@@ -79,11 +86,10 @@ body {
 }
 
 .executeButton {
-    text-decoration: none;
     text-align: center;
+    font-size: 16px;
 
     margin-bottom: 50px;
-    padding-top: 10px;
 
     border: none;
     border-radius: 40px;
@@ -91,8 +97,8 @@ body {
     color: var(--main-font-color);
     background-color: #96d2fc;
 
-    width: 4vw;
-    height: 3vh;
+    width: 5vw;
+    height: 4vh;
     transition: all 0.1s ease-in-out;
 }
 
@@ -122,7 +128,6 @@ body {
 /*Register and Login styles end*/
 
 .mainContainer {
-
     position: relative;
 
     border-radius: 50px;
@@ -168,6 +173,22 @@ body {
     text-decoration: none;
 }
 
+.homeNav button {
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    color: var(--main-font-color);
+}
+
+.homeNav button:hover {
+    text-decoration: underline;
+}
+
 .homeNav a:hover {
     text-decoration: underline;
 }
@@ -203,8 +224,7 @@ body {
     float: left;
 
     display: inline-block;
-    /*position: absolute;*/
-    /*left: 50px;*/
+
     margin-top: 30px;
 
     padding: 10px;
@@ -303,32 +323,98 @@ body {
     font-size: 26px;
 }
 
-.user .langsTable {
-    margin-top: 50px;
-
-    border-spacing: 10px;
-    border-collapse: separate;
+.user .langs {
+    margin-top: 5vh;
 }
 
-.user .langsTable td {
-    background-color: #96d2fc;
+.user .lang {
+    display: inline-block;
 
     padding: 5px;
 
     border-radius: 10px;
-}
 
-.user .rolesTable {
-    border-spacing: 10px;
-    border-collapse: separate;
-}
+    font-size: 16px;
 
-.user .rolesTable td {
     background-color: #96d2fc;
+}
+
+
+.user .role {
+    display: inline-block;
 
     padding: 5px;
 
     border-radius: 10px;
+
+    font-size: 16px;
+
+    background-color: #96d2fc;
 }
 
 /* Users styles end */
+
+/* UserPage styles start */
+
+.blockContainer {
+    margin-top: 30px;
+    background-color: #85d7ff;
+
+    margin-left: 22vw;
+    padding: 30px;
+
+    width: 30vw;
+    min-height: 30vh;
+
+    border-radius: 30px;
+}
+
+.userHeader {
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-size: 26px;
+}
+
+.userHeader a {
+    font-size: 18px;
+
+    color: var(--main-font-color);
+}
+
+.userName {
+    margin-top: 0;
+}
+
+.infoLabels {
+    font-weight: bold;
+
+    display: block;
+
+    margin-top: 4vh;
+}
+
+.infoContainer .lang {
+    display: inline-block;
+
+    background-color: #a3dbff;
+
+    border-radius: 10px;
+
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.targetUser {
+    word-wrap: break-word;
+}
+
+.aboutUser {
+    word-wrap: break-word;
+}
+
+.backgroundUser {
+    word-wrap: break-word;
+}
+
+/* UserPage styles end */

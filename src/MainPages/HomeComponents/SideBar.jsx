@@ -2,16 +2,15 @@ import { Link } from "react-router-dom";
 import SideFilter from "./SideFilter.jsx";
 import PropTypes from "prop-types";
 
-function SideBar({ users, setUsers }) {
+function SideBar({ users, setUsers, page }) {
 
     return(
         <>
             <div className="sideBar">
                 <div className="links">
                     <Link to='/'>Find team</Link>
-                    <Link to='/'>Requests</Link>
                 </div>
-                <SideFilter users={users} setUsers={setUsers}/>
+                {!page && <SideFilter users={users} setUsers={setUsers}/>}
             </div>
         </>
     );
@@ -20,6 +19,7 @@ function SideBar({ users, setUsers }) {
 SideBar.propTypes = {
     users: PropTypes.array,
     setUsers: PropTypes.func,
+    page: PropTypes.bool,
 };
 
 export default SideBar;

@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useIsLoggedStore } from "../../Store/Store.js";
 
 
 function Header({ userName, isLogged }) {
+    const setIsLogged = useIsLoggedStore(state => state.setIsLogged);
+
+    const handleLogOut = () => {
+        setIsLogged(false);
+    }
 
     return(
         <>
@@ -10,7 +16,7 @@ function Header({ userName, isLogged }) {
                 <h1>TeamSeek</h1>
                 <div className="navRightCorner">
                     {isLogged && <Link to="/">{ userName }</Link>}
-                    {isLogged && <Link to="/">Log out</Link>}
+                    {isLogged && <button onClick={ handleLogOut }>Log out</button>}
                     {!isLogged && <>
                         <Link to="/login">Log in</Link>
                         <Link to="/register">Register</Link>
