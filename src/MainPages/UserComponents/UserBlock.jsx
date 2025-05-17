@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function UserBlock( {userName, about, stack, target, bg, url} ) {
+function UserBlock( {userName, about, stack, target, bg, contacts, url} ) {
 
     return (
         <>
@@ -15,13 +15,16 @@ function UserBlock( {userName, about, stack, target, bg, url} ) {
                     <p className="aboutUser">{ about }</p>
 
                     <label className="infoLabels">Stack</label>
-                    {stack.map((lang, index) => (<p key={index} className="lang">{lang}</p>))}
+                    <p className="stackUser">{ stack }</p>
 
                     <label className="infoLabels">Target</label>
                     <p className="targetUser">{ target }</p>
 
                     <label className="infoLabels">Background</label>
                     <p className="backgroundUser">{ bg }</p>
+
+                    <label className="infoLabels">Contacts</label>
+                    <p className="contactsUser">{ contacts }</p>
                 </div>
             </div>
         </>
@@ -31,9 +34,10 @@ function UserBlock( {userName, about, stack, target, bg, url} ) {
 UserBlock.propTypes = {
     userName: PropTypes.string,
     about: PropTypes.string,
-    stack: PropTypes.array,
+    stack: PropTypes.string,
     target: PropTypes.string,
     bg: PropTypes.string,
+    contacts: PropTypes.string,
     url: PropTypes.string,
 }
 

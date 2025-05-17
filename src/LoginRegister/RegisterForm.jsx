@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useIsLoggedStore, useLoggedNameStore } from "../Store/Store.js";
+import { useIsLoggedStore, useLoggedUserStore } from "../Store/Store.js";
 
 
 
@@ -10,7 +10,7 @@ function RegisterForm() {
     const [password, setPassword] = useState('');
     const [isPending, setIsPending] = useState(false);
     const setIsLogged = useIsLoggedStore(state => state.setIsLogged);
-    const setUserName = useLoggedNameStore(state => state.setUserName);
+    const setUserName = useLoggedUserStore(state => state.setUserName);
 
     const history = useNavigate();
 

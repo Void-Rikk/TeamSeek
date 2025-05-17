@@ -7,7 +7,7 @@ export const useIsLoggedStore = create((set) => ({
     }
 }));
 
-export const useLoggedNameStore = create((set) => ({
+export const useLoggedUserStore = create((set) => ({
     userName: '',
     setUserName: (newName) => {
         set((state) => ({ userName: newName }))

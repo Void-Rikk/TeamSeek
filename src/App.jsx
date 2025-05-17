@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './Styles.css';
 import HomePage from "./MainPages/HomePage.jsx";
 import UserPage from "./MainPages/UserPage.jsx";
+import UserProfile from "./MainPages/UserProfile.jsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/register" element={<RegisterForm />}/>
                 <Route path="/login" element={<LoginForm />}/>
                 <Route path="/users/:id" element={<UserPage />}/>
+                <Route path="/profile" element={<UserProfile />}/>
             </Routes>
         </BrowserRouter>
     );

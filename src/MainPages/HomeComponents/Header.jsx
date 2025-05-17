@@ -8,6 +8,7 @@ function Header({ userName, isLogged }) {
 
     const handleLogOut = () => {
         setIsLogged(false);
+        sessionStorage.clear();
     }
 
     return(
@@ -15,7 +16,7 @@ function Header({ userName, isLogged }) {
             <nav className="homeNav">
                 <h1>TeamSeek</h1>
                 <div className="navRightCorner">
-                    {isLogged && <Link to="/">{ userName }</Link>}
+                    {isLogged && <Link to="/profile">{ userName }</Link>}
                     {isLogged && <button onClick={ handleLogOut }>Log out</button>}
                     {!isLogged && <>
                         <Link to="/login">Log in</Link>

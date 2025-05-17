@@ -8,11 +8,11 @@ function UsersList( {users} ) {
         <>
             <div className="usersContainer">
                 {users.map((user) => (
-                    <User key={user.id}
-                          name={user.name}
-                          languages={user.languages}
-                          roles={user.roles}
-                          id={user.id}
+                    <User key={ user.id }
+                          name={ user.name }
+                          languages={ user.languages }
+                          roles={ user.roles }
+                          id={ user.id }
                     />
                 ))}
             </div>

@@ -308,6 +308,8 @@ body {
 
 .user:hover {
     background-color: #45c3ff;
+
+    transform: scale(101%);
 }
 
 .user a {
@@ -357,9 +359,9 @@ body {
 /* UserPage styles start */
 
 .blockContainer {
-    margin-top: 30px;
-    background-color: #85d7ff;
+    background-color: #6cccf9;
 
+    margin-top: 2vh;
     margin-left: 22vw;
     padding: 30px;
 
@@ -380,6 +382,12 @@ body {
     font-size: 18px;
 
     color: var(--main-font-color);
+
+    transition: all 0.1s ease-in;
+}
+
+.userHeader a:hover {
+    color: #ffffff;
 }
 
 .userName {
@@ -394,15 +402,8 @@ body {
     margin-top: 4vh;
 }
 
-.infoContainer .lang {
-    display: inline-block;
-
-    background-color: #a3dbff;
-
-    border-radius: 10px;
-
-    padding: 5px;
-    margin-right: 10px;
+.stackUser {
+    word-wrap: break-word;
 }
 
 .targetUser {
@@ -417,4 +418,142 @@ body {
     word-wrap: break-word;
 }
 
+.contactsUser {
+    word-wrap: break-word;
+}
+
 /* UserPage styles end */
+
+/* UserProfile styles start */
+
+.profileBlock {
+    position: relative;
+
+    background-color: #85d7ff;
+
+    margin-top: 2vh;
+    margin-left: 20vw;
+    padding: 30px;
+
+    border-radius: 30px;
+
+    width: 35vw;
+}
+
+.profileBlock textarea {
+    resize: none;
+
+    min-width: 20vw;
+    min-height: 10vh;
+
+    font-family: Arial, serif;
+    font-size: 16px;
+}
+
+.createHeader {
+    margin-top: 0;
+    margin-bottom: 4vh;
+}
+
+.createLabels {
+    display: inline-block;
+
+    margin-top: 2vh;
+    margin-bottom: 5px;
+}
+
+.createInputs {
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.createInputs:focus {
+    outline: none;
+}
+
+.cardFormHeader {
+    margin-top: 4vh;
+}
+
+.langSelect {
+    border: none;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+.langSelect:focus {
+    outline: none;
+}
+
+.roleSelect {
+    border: none;
+    border-radius: 10px;
+}
+
+.roleSelect {
+    outline: none;
+}
+
+.addButtons {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    min-height: 2vh;
+    min-width: 2vw;
+
+    background-color: #ffffff;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: all 0.1s ease-in;
+}
+
+.removeButtons {
+    background-color: #ffffff;
+
+    min-height: 2vh;
+    min-width: 3vw;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: all 0.1s ease-in;
+}
+
+.addButtons:hover {
+    background-color: #b6e6ff;
+}
+
+.removeButtons:hover {
+    background-color: #85d7ff;
+}
+
+.createButton {
+    position: absolute;
+
+    bottom: 2vh;
+    right: 2vw;
+
+    border: none;
+    border-radius: 10px;
+
+    min-width: 4vw;
+    min-height: 3vh;
+
+    font-size: 18px;
+
+    background-color: #ffffff;
+
+    transition: all 0.1s ease-in;
+}
+
+.createButton:hover {
+    background-color: #b6e6ff;
+    transform: scale(110%);
+}
+
+/* UserProfile styles end */
